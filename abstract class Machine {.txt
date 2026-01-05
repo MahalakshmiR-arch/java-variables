@@ -1,0 +1,20 @@
+abstract class Machine {
+    abstract void work();
+    void powerOn() {
+        System.out.println("Machine is ON");
+    }
+}
+class Computer extends Machine {
+
+    @Override
+    void work() {
+        System.out.println("Computer is working");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Machine m = new Computer();
+        m.powerOn();
+        m.work();
+    }
+}

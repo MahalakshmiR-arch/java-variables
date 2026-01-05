@@ -1,0 +1,15 @@
+interface Appliance {
+    void work();  
+}
+class WashingMachine implements Appliance {
+public void work() {
+        System.out.println("Washing machine is ON");
+        System.out.println("Washing clothes");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Appliance a = new WashingMachine();
+        a.work();
+    }
+}
