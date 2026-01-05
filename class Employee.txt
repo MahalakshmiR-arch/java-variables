@@ -1,0 +1,14 @@
+class Employee {
+    static int age;
+}
+public class Main {
+    public static void main(String args[]) {
+        Employee e1 = new Employee();
+        Employee e2 = new Employee();
+        e1.age = 30;
+        e2.age = 25;
+        Employee.age = 28;
+        System.out.println("Employee 1's age is: " + e1.age);
+        System.out.println("Employee 2's age is: " + e2.age);
+    }
+}

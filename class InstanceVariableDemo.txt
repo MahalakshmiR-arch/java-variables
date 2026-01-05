@@ -1,0 +1,23 @@
+  class InstanceVariableDemo {
+  String bankName;
+    String accountNumber;
+   String ifscCode;
+    String accountType;
+    double balance;
+    void display() {
+        System.out.println("Bank Name    : " + bankName);
+        System.out.println("Account No   : " + accountNumber);
+        System.out.println("IFSC Code    : " + ifscCode);
+        System.out.println("Account Type : " + accountType);
+        System.out.println("Balance  :Rs " + balance);
+    }
+    public static void main(String[] args) {
+        InstanceVariableDemo acc = new InstanceVariableDemo();
+        acc.bankName = "Bank of Boroda";
+        acc.accountNumber = "987654321080";
+        acc.ifscCode = "B0B0A123456";
+        acc.accountType = "Saving";
+        acc.balance = 15000;
+        acc.display();
+    }
+}

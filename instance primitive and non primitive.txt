@@ -1,0 +1,51 @@
+class Demo {
+
+    // Instance method
+    void show() {
+        System.out.println("Instance method executed");
+    }
+}
+
+// Main class
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Primitive data types
+        boolean isJavaFun = true;
+        char grade = 'A';
+        byte b = 10;
+        short s = 200;
+        int i = 10000;
+        long l = 100000L;
+        float f = 12.5f;
+        double d = 123.456;
+
+        // Non-primitive data types
+        String name = "Maha";
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Object creation (instance)
+        Demo obj = new Demo();
+
+        // Output
+        System.out.println("Boolean value : " + isJavaFun);
+        System.out.println("Char value    : " + grade);
+        System.out.println("Byte value    : " + b);
+        System.out.println("Short value   : " + s);
+        System.out.println("Int value     : " + i);
+        System.out.println("Long value    : " + l);
+        System.out.println("Float value   : " + f);
+        System.out.println("Double value  : " + d);
+        System.out.println("String value  : " + name);
+
+        System.out.print("Array values  : ");
+        for (int x : numbers) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+
+        // Calling instance method
+        obj.show();
+    }
+}
