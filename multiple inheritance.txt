@@ -1,0 +1,39 @@
+interface Player {
+    void play();
+}
+
+interface Instrument {
+    void sound();
+}
+
+class Guitarist implements Player, Instrument {
+    public void play() {
+        System.out.println("Guitarist is playing music.");
+    }
+
+    public void sound() {
+        System.out.println("Guitarist uses a guitar.");
+    }
+}
+
+class Pianist implements Player, Instrument {
+    public void play() {
+        System.out.println("Pianist is playing music.");
+    }
+
+    public void sound() {
+        System.out.println("Pianist uses a piano.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Guitarist g = new Guitarist();
+        Pianist p = new Pianist();
+
+        g.play();
+        g.sound();
+
+        p.play();
+        p.sound();
+    }

@@ -1,0 +1,23 @@
+class Person {
+    void walk() {
+        System.out.println("walking");
+    }
+}
+class Employee extends Person {
+    void work() {
+        System.out.println("working");
+    }
+}
+class Manager extends Employee {
+    void manage() {
+        System.out.println("managing");
+    }
+}
+public class Main {
+    public static void main(String args[]) {
+        Manager m = new Manager();
+        m.manage();
+        m.work();
+        m.walk();
+    }
+}

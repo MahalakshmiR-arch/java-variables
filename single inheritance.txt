@@ -1,0 +1,17 @@
+class Vehicle {
+    void run() {
+        System.out.println(" running");
+    }
+}
+class Car extends Vehicle {
+    void drive() {
+        System.out.println(" driving");
+    }
+}
+public class Main {
+    public static void main(String args[]) {
+        Car c = new Car();
+        c.drive();
+        c.run();
+    }
+} 
