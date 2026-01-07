@@ -1,0 +1,33 @@
+class Machine
+{
+    public void disp()
+    {
+        System.out.println("This is a Machine");
+    }
+    public static void main(String args[])
+    {
+        Car obj = new Car();
+        obj.disp();
+    }
+}
+class Vehicle extends Machine
+{
+    public void disp()
+    {
+        System.out.println("This is a Vehicle");
+    }
+}
+class Printer extends Machine
+{
+    public void disp()
+    {
+        System.out.println("This is a Printer");
+    }
+}
+class Car extends Vehicle
+{
+    public void disp()
+    {
+        System.out.println("This is a Car");
+    }
+}
