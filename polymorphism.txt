@@ -1,0 +1,40 @@
+class Man {
+void sound() {
+        System.out.println("A man makes a sound");
+    }
+   void sound(String type) {
+        System.out.println("Man sound: " + type);
+    }
+}
+class Dog extends Man {
+    @Override
+    void sound(String type) {
+        System.out.println("Dog barking is: " + type);
+    }
+}
+class Duck extends Man {
+ @Override
+    void sound(String type) {
+        System.out.println("Duck sound is: " + type);
+    }
+}
+class Cat extends Man {
+    @Override
+    void sound(String type) {
+        System.out.println("Cat sound is: " + type);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Man m = new Man();
+        Man poly;
+        m.sound();
+        m.sound("Normal");
+        poly = new Dog();
+        poly.sound("Loud");
+        poly = new Duck();
+        poly.sound("Soft");
+        poly = new Cat();
+        poly.sound("Meow");
+    }
+}
