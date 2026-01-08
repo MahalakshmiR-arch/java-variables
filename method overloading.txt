@@ -1,0 +1,34 @@
+class Adder {  
+static int add(int a, int b) {  
+        return a + b;  
+    }  
+      static long add(long a, long b) {  
+        return a + b;  
+    }  
+     static float add(float a, float b) {  
+        return a + b;  
+    }  
+    static double add(double a, double b) {  
+        return a + b;  
+    }  
+    static short add(short a, short b) {  
+        return (short)(a + b);  
+    }  
+    static byte add(byte a, byte b) {  
+        return (byte)(a + b);  
+    }  
+    static int add(char a, char b) {  
+        return a + b;  
+    }  
+}  
+public class Main {  
+    public static void main(String[] args) {  
+        System.out.println(Adder.add(10, 20));  
+        System.out.println(Adder.add(100L, 200L));  
+        System.out.println(Adder.add(10.5f, 20.5f));  
+        System.out.println(Adder.add(12.3, 12.6));  
+        System.out.println(Adder.add((short)5, (short)10));  
+        System.out.println(Adder.add((byte)2, (byte)3));  
+        System.out.println(Adder.add('A', 'B'));  
+}  
+}
