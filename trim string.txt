@@ -1,0 +1,8 @@
+public class TrimExample {
+    public static void main(String[] args) {
+        String str = "   Mahalakshmi   ";
+
+        System.out.println("Before trim: '" + str + "'");
+        System.out.println("After trim: '" + str.trim() + "'");
+    }
+}
